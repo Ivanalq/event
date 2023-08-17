@@ -4,7 +4,7 @@
         display: none;
     }
 
-    .inner-container-navbar{
+    .inner-container-navbar, .wrapper-head-section-navigation{
         min-width: 280px;
         width: 100%;
         padding: 0px 30px;
