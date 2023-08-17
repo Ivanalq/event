@@ -1,0 +1,272 @@
+@media (max-width: 1200px){
+    .search-item-nav,
+    .buttonn-items-nav{
+        display: none;
+    }
+
+    .inner-container-navbar{
+        min-width: 280px;
+        width: 100%;
+        padding: 0px 30px;
+    }
+
+    .burger-button{
+        display: block;
+        width: 50px;
+        
+    }
+
+    .burger-button-container{
+        float: right;
+    }
+    .open{
+        display: block;
+    }
+
+    .nav-buttons, .mobile-item-nav-button{
+        display: block;
+    }
+
+    .nav-buttons{
+        position:fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 1;
+        
+        
+    }
+
+    .button-menu{
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 600;
+        width: 300px;
+
+    }
+
+    .mobile-item-nav-button{
+        width: 300px;
+        padding-left: 20px;
+        
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .mobile-item-nav-button-exit{
+        width: 300px;
+        background-color: rgb(181, 1, 1);
+        color: white;
+
+    }
+    .mobile-item-nav-button-exit:hover{
+        background-color: white;
+        color: rgb(181, 1, 1);
+        border: 1px solid rgb(181, 1, 1);
+    }
+    .mobile-item-nav-button-events{
+        width: 300px;
+    }
+
+    
+    .button-login, .btn-registration-nav{
+        display: none;
+    }
+    .btn-login-mob{
+        display: block;
+    }
+    .btn-registration-mob{
+        display: block;
+    }
+
+    .button-exit-in-base-menu{
+        display: flex;
+        z-index: 1;
+        position: fixed;
+        justify-content: end;
+        right: 10px;
+        margin-top: 0px;
+        transition: .2s linear;
+    }
+    
+    .btn-exit-nav{
+        width: 48px;
+        height: 48px;
+        border: none;
+        background-color: white;
+        color: black;
+        transition: .2s linear;
+    }
+
+    .btn-exit-nav:hover{
+        border: 1px solid black;
+        border-radius: 7px;
+        transition: .2s linear;
+    }
+    .nav-button-search-menu{
+        display: block;
+        
+    }
+    .buttons-nav-menu{
+        text-align: center;
+    }
+
+    .container-1 {
+        width: 19rem;
+        height: 100%;
+        font-size: 50%;
+        position: relative;
+    }
+    
+    .searchbar {
+        font-size: 1.2rem;
+        width: 19rem;
+        height: 2.5rem;
+        border: 1px solid black;
+        outline: none;
+        border-radius: 1rem;
+        padding: 1rem;
+        transition: all .2s;
+        
+    }
+    .searchbar:hover {
+        width: 20rem;
+        height: 3rem;
+    }
+    .button {
+        height: 1rem;
+        position: absolute;
+        top: 0.75rem;
+        right: 0.5rem;
+        transition: all .2s;
+        
+    }
+    .button:hover {
+        cursor: pointer;
+    }
+    .searchbar:hover + .button {
+        height: 1.25rem;
+        top: 0.9rem;
+        right: 0;
+    }
+    .searchbar::placeholder {
+        opacity: .3;
+    }
+
+    .container-text-under-navbar{
+        min-width: 280px;
+        width: 100%;
+        padding: 0px 30px;
+    }
+    
+}
+
+@media (max-width: 1200px){
+    .container-text-under-navbar{
+        min-width: 280px;
+        width: 100%;
+        padding: 0px 30px;
+    }
+}
+
+@media (max-width: 800px){
+    .row-under-nav{
+        display: block;
+    }
+
+    .base-text-column{
+        width: 100%;
+        
+    }
+
+    .image-section-basetext-header {
+        float: none;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+    .image-site-logo{
+        width: 100%;
+    }
+    .logotipe-site-under-header{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px){
+    .button-exit-in-base-menu{
+        display: flex;
+        z-index: 1;
+        position: fixed;
+        justify-content: end;
+        top: 10px;
+        margin-top: 0px;
+        transition: .2s linear;
+    }
+    
+    .btn-exit-nav{
+        width: 48px;
+        height: 48px;
+        border: none;
+        background-color: white;
+        color: black;
+        transition: .2s linear;
+    }
+
+    .btn-exit-nav:hover{
+        border: 1px solid black;
+        border-radius: 7px;
+        transition: .2s linear;
+    }
+
+    .btn-login-mob{
+        display: block;
+        margin-top: 70px;
+    }
+    .nav-buttons{
+        position:fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 1;
+        
+        
+    }
+
+    .button-menu{
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 600;
+        width: 300px;
+
+    }
+    .button-login, .btn-registration-nav{
+        display: none;
+    }
+    .btn-login-mob{
+        display: block;
+        margin-top: 70px;
+    }
+    .btn-registration-mob{
+        display: block;
+    }
+}
+
+
+
+
+

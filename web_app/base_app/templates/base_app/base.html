@@ -1,5 +1,6 @@
 {% load static %}
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,199 +11,111 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'base_app/css/base_underheader.css' %}" />
     <link rel="stylesheet" href="{% static 'base_app/css/base.css' %}" />
-    <link rel="stylesheet" href="{% static 'base_app/css/section.css' %}" />
+    <link rel="stylesheet" href="{% static 'base_app/css/media.css' %}" />
 </head>
 <body>
-    <header class="desktop">
-        <div class="container px-4 text-center">
-            <div class="row gx-5">
-              <div class="col col-site-name">
-               <div class="p-3">
-                <div class="logo-nav">
-                    <div class="navbar-item name-site-container">
-                        <a href="#" class="name-site-a">
-                            <h5 class="name-site">Мероприятия СПБ</h5>
-                        </a>
+    <header>
+      <nav>
+          <div class="container-navbar">
+            <div class="inner-container-navbar">
+              
+                <div class="row">
+                  <div class="col">
+                    <div class="nav-item site-name-base">
+                      <a href="#" class="site-name"><h3>Мероприятия СПБ</h3></a>
                     </div>
-                </div>
-               </div>
-              </div>
-              <div class="col">
-                <div class="p-3">
-                    <div class="search-nav text-center text-centr-desctop">
-                        <div class="navbar-item">
-                            <div class="form-search-container">
-                                <form>
-                                    <input type="text" placeholder="Найти мероприятие">
-                                    <button class="form-btn btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                      </svg></button>
-                                  </form>
+                  </div>
+                  <div class="col search-item-nav">
+                    <div class="nav-item ">
+                      <div class="search-nav-item">
+                        <div class="container-1">
+                          <input type="text" maxlength= "30" placeholder="Найти" class="searchbar">
+                          <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="search icon" class="button">
+                        </div>
+      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col buttonn-items-nav" id="buttons">
+                    <div class="nav-item buttons-nav-menu">
+                      <div class="nav-buttons">
+                        <button class="button-menu button-login btn-login-mob">Войти</button>
+                        <button class="button-menu base-nav-button btn-registration-mob">Регистрация</button>
+                        <button class="button-menu base-nav-button about-us">О нас</button>
+                        <button class="button-menu base-nav-button btn-registration-nav">Регистрация</button>
+                        <button class="button-menu button-login">Войти</button>
+                        <button class="button-menu base-nav-button mobile-item-nav-button mobile-item-nav-button-events">Мои мероприятия</button>
+                        <button class="button-menu base-nav-button mobile-item-nav-button">Посещённые мероприятия</button>
+                        <button class="button-menu base-nav-button mobile-item-nav-button mobile-item-nav-button-exit">Выйти</button>
+
+                        <div class="search-item-nav nav-button-search-menu">
+                          <div class="nav-item ">
+                            <div class="search-nav-item">
+                              <div class="container-1">
+                                <input type="text" maxlength= "30" placeholder="Найти" class="searchbar">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="search icon" class="button">
+                              </div>
                             </div>
+                          </div>
                         </div>
+
+                      </div>
                     </div>
+                    <div class="button-exit-in-base-menu" id="exit-btn">
+                      <button class="btn-exit-nav">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                          <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col- burger-button" id="nav-btn">
+                    <div class="burger-button-container">
+                      <button class="burger-nav-button">
+                        <div class="inbutton-container">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="44" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                          </svg>
+                        </div>
+                         </button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div> 
+      </nav>
+
+      <div class="background-container">
+        <div class="container-text-under-navbar-wrapper">
+          <div class="container-text-under-navbar">
+            <div class="row row-under-nav">
+              <div class="col-8 base-text-column">
+                <div class="title-base-text-container">
+                  <h2 class="title-base-text-header">Кто мы?</h2>
+                </div>
+                <div class="p-text-base-text">
+                  <p class="base-text-p-header">
+                    Сайт "Мероприятия СПб" - это удобный календарь событий, проходящих в Санкт-Петербурге. Здесь вы найдете информацию о концертах, выставках, спортивных мероприятиях, фестивалях и других интересных событиях, которые проходят в городе. На сайте можно выбрать нужную дату и узнать, что происходит в этот день, а также подписаться на рассылку и получать уведомления о новых мероприятиях. Благодаря сайту "Мероприятия СПб" вы никогда не пропустите важное событие в своем городе!
+                  </p>
                 </div>
               </div>
-              <div class="col">
-                <div class="p-3">
-                    <div class="nav-buttons">
-                        <div class="navbar-item item-therd-nav">
-                            <button type="button" class="btn btn-register1">О нас</button>
-                        </div>
-                        <div class="navbar-item item-therd-nav">
-                            <button type="button" class="btn  btn-register">Зарегистрироваться</button>
-                        </div>
-                        <div class="navbar-item item-therd-nav1">
-                            <button type="button" class="btn  button-login" >Войти</button>
-                        </div>
-                    </div>
+              <div class="col-4 image-site-logo">
+                <div class="image-section-basetext-header">
+                  <img class="logotipe-site-under-header" src="media/img/logo.jpg" alt="">
                 </div>
               </div>
             </div>
           </div>
+
+        </div>
+      </div>
     </header>
-    <header class="mobile">
-        <nav class="navbar bg-body-tertiary fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="">Мероприятия СПБ</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">О нас</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Войти</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Зарегистрироваться</a>
-                      </li>
-                    
-                  </ul>
-                  
-                    <form>
-                        <input type="text" placeholder="Найти">
-                        <button class="form-btn btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                          </svg>
-                        </button>
-                      </form>
-                 
-                </div>
-              </div>
-            </div>
-          </nav>
-    </header>
-    
 
-    <section>
-        <div class="aller-container">
 
-            <div class="container text-center aller-container-section">
-                <div class="row aller-row-swction">
-                  <div class="col">
-                    <div class="inner-text-align-section">
-                        <div>
-                            <div class="title-text-container-section">
-                                <h3>Кто мы?</h3>
-                            </div>
-                            <div class="base-text-container-section">
-                                <p class="text-description-section">Мероприятия Спб - это сайт, цель которого собрать все мероприятия нашего города в одном месте, и что бы любой человек мог бы взять, и найти нужное ему мероприятие для проведения досуга и пойти на него. В свою же очередь любая организация может зарегистрироваться на нашем сайте, и начать публиковать свои мероприятия, что бы люди могли пойти на них.</p>
-                            </div>
 
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col col-lg-2">
-                    <div class="image-container-section">
-                        <div class="inner-image-container-stction">
-
-                            <img class="image-section-img" src="/media/img/Untitled_logo_1_free-file.jpg" alt="">
-                        </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </div>
-    </section>
-
-    <section class="base-section"> 
-        <div class="head">
-            <div class="container text-center аааа">
-                <div class="row justify-content-md-center ">
-                  <div class="title-text">
-                    <h2>Мероприятия</h2>
-                  </div>
-                </div>
-              </div>
-        </div>
-        <div class="buttons-choise-mod-section">
-            <div class="container text-center">
-                <div class="row">
-                  <div class="col">
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                          Выпадающая кнопка
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">По популярности</a></li>
-                          <li><a class="dropdown-item" href="#">Самые новые</a></li>
-                          <li><a class="dropdown-item" href="#">Самые ст/a></li>
-                          
-                        </ul>
-                      </div>
-                  </div>
-                  <div class="col">
-                    <nav class="navbar navbar-white bg-white">
-                        <div class="container-fluid" id="1233">
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Переключатель навигации">
-                            <div class="text-button-filters">
-                                <p class="filters-name-section">Фильтры</p>
-                            </div>
-                            <div class="icon-filters-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-filter-circle" viewBox="0 0 16 16">
-                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    <path d="M7 11.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"/>
-                                  </svg>
-                            </div>
-                            
-                          </button>
-                        </div>
-                      </nav>
-                    <div class="collapse" id="navbarToggleExternalContent">
-                        <div class="decorated-collapse">
-
-                            <div class="p-4">
-                              <form  method="post">
-                                <h4>Метро</h4>
-                                <input type="text">
-                                <h4>Дата</h4>
-                                <input type="date" name="" id="">
-                                <h4>Время начала с</h4>
-                                <input type="time" name="" id="">
-                                <h4>Время начала до</h4>
-                                <input type="time" name="" id="">
-                                <h4>Длится</h4>
-                                <input type="number">
-
-                              </form>
-                            </div>
-                        </div>
-                      </div>
-                      
-                  </div>
-                </div>
-              </div>
-        </div>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <footer>
+    </footer>
+  <script src="{% static 'base_app/js/main.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
