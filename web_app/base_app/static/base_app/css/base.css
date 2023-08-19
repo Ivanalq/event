@@ -56,14 +56,16 @@ body{
     opacity: .3;
 }
 
-.container-navbar, .container-text-under-navbar-wrapper, .head-section-navigation{
+.container-navbar, .container-text-under-navbar-wrapper, .head-section-navigation, .events-cards,
+.wrapper-footer-container{
     display: flex;
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.inner-container-navbar{
+.inner-container-navbar, .events-cards-werapper-general,
+.footer-container-inner{
     min-width: 1200px;
     max-width: 1800px;
     
@@ -285,7 +287,7 @@ body{
     width: 178px;
     font-size: 14px;
     position: absolute;
-    
+    z-index: 1;
     padding-left: 0;
 }
 .mods-sort-inems .option {
@@ -302,9 +304,11 @@ body{
     transition: 0.2s;
     
     transition-delay: calc(.1s * var(--i));
+    z-index: 1;
 }
 
 .option{
+    z-index: 1;
     padding: 10px;
     border-radius: 10px;
 }
@@ -317,6 +321,7 @@ body{
 }
 .start-select-button.active .arrow-down{
     transform: rotate(180deg);
+    
 }
 
 .start-select-button.active~.mods-sort-inems .option{
@@ -325,4 +330,266 @@ body{
     
     transform: scale(1) translateY(0);
     margin-bottom: 0;
+    
 }
+
+.button-filters{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    font-size: 13px;
+    cursor: pointer;
+    width: 178px;
+    background-color: white;
+}
+
+.button-select-filters-base{
+    border: none;
+    border-radius: 10px;
+}
+
+.filter-button-container{
+    display: inline-flex;
+    float: right;
+}
+
+.button-sort-quick{
+    display: inline-flex;
+}
+.icon-filers{
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.button-filters:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+.start-select-button:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+
+
+.mods-seach-containers{
+    display: inline-flex;
+}
+
+
+.one-block-seach> ul{
+    list-style-type: none;
+}
+
+.one-search-mod-btn{
+    margin: 5px;
+    border: none;
+    background-color: white;
+    color: rgb(92, 92, 92);
+    font-size: 12px;
+}
+
+.one-search-mod-btn:hover{
+    color: rgb(94, 37, 148);
+}
+
+.one-block-seach{
+    width: 200px;
+}
+
+.mods-search-container-wrepper{
+    
+    display: flex;
+    justify-content: center;
+}
+
+
+.title-mods-menu{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.events-cards{
+    margin-top: 0;
+    transition: 2s;
+}
+
+.head-section-navigation{
+    margin-bottom: 0;
+}
+
+.button-sort-quick{
+    margin-bottom: 50px;
+}
+
+.event-card-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    background: rgb(100, 73, 144);
+    overflow: hidden; 
+    border-radius: 13px;
+
+}
+
+.event-card-wrapper::before{
+    content: "";
+  padding-top: 100%;
+  float: left;
+}
+
+.container-fluid-custom{
+
+    --bs-gutter-x: 0rem;
+}
+
+.event-card-col-custom{
+    padding-top: calc(var(--bs-gutter-x) * .5);
+    padding-bottom: calc(var(--bs-gutter-x) * .5);
+}
+
+.scelet-event-card{
+    margin: 15px ;
+}
+
+.title-event-card>h3{
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.image1-cardevent-img{
+    width: 120px;
+    border-radius: 10px;
+}
+
+.upper-telo-cardevent{
+    margin-top: 30px;
+    display: inline-flex;
+}
+
+.text1-cardevent, .text-nearby-image-down{
+    margin-left: 15px;
+    color: white;
+}
+
+.image2-carevent-img{
+    border-radius: 10px;
+    width: 120px;
+    height: 140px;
+}
+
+.downer-telo0container{
+
+    
+}
+
+
+.title-event-card{
+    display: flex;
+    justify-content: center;
+}
+
+.button-more-event-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.more-event-section-btn{
+    width: 100%;
+    padding: 15px;
+}
+
+.more-btn-eventcard{
+    border: 1px solid white;
+    width: 100%;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: white;
+    
+    transition: 0.3s;
+}
+
+.more-btn-eventcard:hover{
+    background-color: rgb(0, 167, 53);
+    border: 1px solid rgb(0, 167, 53);
+    color: white;
+    transition: 0.3s;
+}
+
+.text-downer-nearby-img-down-p{
+    font-size: 17px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.events-cards-werapper-general{
+    max-width: 100px;
+}
+
+.all-foooter-container{
+    background-color: rgb(168, 168, 168);
+    bottom: 1;
+}
+
+.wrapper-footer-container{
+    margin-bottom: 0;}
+
+.social-networks-container,
+.social-network-container, 
+.up-row-container,
+.dop-buttons-nav{
+    display: inline-flex;
+}
+.up-row-container{
+    padding-top: 50px;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+    
+}
+
+.down-row-container{
+    padding-bottom: 20px;
+}
+
+.text-base-social-networks{
+
+}
+
+.social-network-container{
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+
+.logovk, 
+.logoface{
+    margin-top: 3px;
+}
+
+
+.footer-button{
+    border: none;
+    background-color: transparent;
+    transition: 0.09s;
+}
+
+.button-footer{
+    margin-left: 20px;
+}
+
+.footer-button:hover{
+    transition: 0.09s;
+    color: red;
+
+
+

@@ -3,8 +3,10 @@
     .buttonn-items-nav{
         display: none;
     }
-
-    .inner-container-navbar, .wrapper-head-section-navigation{
+    .events-cards-werapper-general{
+        max-width: 1200px;
+    }
+    .inner-container-navbar, .wrapper-head-section-navigation, .events-cards-werapper-general{
         min-width: 280px;
         width: 100%;
         padding: 0px 30px;
@@ -164,6 +166,10 @@
         width: 100%;
         padding: 0px 30px;
     }
+
+    footer{
+        display: none;
+    }
     
 }
 
@@ -266,6 +272,76 @@
     }
 }
 
+
+@media (max-width: 507px){
+    .menu-filters-btn{
+        display: none;
+    }
+    .button-filters{
+        width: 40px;
+        padding: 0;
+    }
+    .icon-filers{
+        margin-left: 0;
+    }
+
+    .mods-search-container-wrepper{
+        width: 200px;
+    }
+
+    .mob-navigation-collapse{
+        display: flex;
+        justify-content: center;
+    }
+
+    .one-block-seach>ul{
+        padding-left: 0;
+    }
+
+    .container-2 {
+    
+        height: 100%;
+        font-size: 20%;
+        position: relative;
+    }
+    
+    .searchbar1 {
+        font-size: 1.2rem;
+        
+        height: 2rem;
+        border: 1px solid black;
+        outline: none;
+        border-radius: 1rem;
+        padding: 1rem;
+        transition: all .2s;
+        font-size: 13px;
+        width: 200px;
+        
+    }
+    .button1 {
+        height: 0.8rem;
+        position: absolute;
+        top: 0.75rem;
+        right: 0.5rem;
+        transition: all .2s;
+        
+    }   
+}
+
+@media (max-width: 300px){
+    .events-cards-werapper-general{
+        
+    }
+    .upper-telo-cardevent{
+        margin-top: 0;
+        display: block;
+    }
+
+    .image1-cardevent{
+        display: flex;
+        justify-content: center;
+    }
+}
 
 
 

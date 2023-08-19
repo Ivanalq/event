@@ -12,3 +12,4 @@ for(options of option) {
         selectBtn.classList.remove('active');
     }
 }
+
