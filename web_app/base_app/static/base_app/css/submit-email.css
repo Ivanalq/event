@@ -1,0 +1,128 @@
+.pin-code{ 
+    padding: 0; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content:center;
+    
+  } 
+   
+  .pin-code input { 
+    border: 1px solid black; 
+    border-radius: 10px;
+   
+    text-align: center; 
+    width: 50px;
+    height:75px;
+    font-size: 36px; 
+    background-color: #ffffff;
+    margin-right:5px;
+  } 
+
+.base-input{
+    margin-left: 27px;
+}
+  
+  
+  
+  .pin-code input:focus { 
+    border: 1px solid #573D8B;
+    outline:none;
+  } 
+  
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+  .btn-finish-registration{
+    border: 1px solid rgb(33, 31, 123);
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(33, 31, 123);
+    transition: 0.2s;
+    
+}
+
+.send-again{
+    text-decoration: none;
+}
+.btn-finish-registration:hover{
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}
+.container-submit-email{
+
+    padding: 25px;
+}
+
+.title-submit-email> h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    
+}
+
+.text-under-title{
+    width: 300px;
+    font-size: 19px;
+    color: rgb(132, 132, 132);
+    margin-bottom: px;
+}
+
+.submit-email-wrapper, .title-submit-email{
+    text-align: center;
+}
+
+.title-submit-email{
+    margin-bottom: 35px;
+    width: 300px;
+    
+}
+
+.text-under-form{
+    margin-top: 20px;
+    text-align: left;
+    color: rgb(143, 143, 143);
+}
+
+.pin-code{
+    margin-top: 20px;
+}
+
+@media (max-width: 380px){
+    .inputs-form-user-reg>input, 
+    .btn-finish-registration,
+    .title-submit-email,
+    .text-under-title
+    {
+        width: 90%;
+        height: 40px;
+        padding: 8px;
+    }
+
+    .pin-code input{
+        width: 40px;
+        height:60px;
+    }
+
+    .base-input{
+        margin-left: 20px;
+    }
+
+    .text-under-title,
+    .container-submit-email,
+    .base-window{
+        padding: 0;
+    }
+
+    .title-submit-email> h3{
+        font-size: 25px;
+    }
+}
+

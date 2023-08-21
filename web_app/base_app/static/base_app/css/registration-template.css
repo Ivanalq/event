@@ -1,0 +1,36 @@
+main {
+    background: linear-gradient(129deg, #401A71 20%, #0135d3 100%);
+    height: 100%;
+    
+}
+
+  
+
+.window-inner{
+   
+    width: 100px;
+    width: 100px;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.window{
+    height: 100%;
+}
+
+
+.base-window{
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+}

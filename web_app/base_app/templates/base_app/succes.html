@@ -1,0 +1,34 @@
+{% extends 'base_app/registration_template.html'%}
+{% load static %}
+
+{% block title %}
+Успешно!
+{% endblock %}
+
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'base_app/css/succes.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<div class="window-succes">
+    <div class="title-window-succes">
+        <h2>Вы успешно авторизировались!</h2>
+    </div>
+    <div class="succes-container">
+        <div class="home-page-container">
+            <a href="#" class="home-page-btn">
+                <div class="inner-home-page-btn">
+                    На главную
+                </div>
+            </a>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}  
+
+{% endblock %}

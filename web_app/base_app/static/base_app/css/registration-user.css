@@ -1,0 +1,56 @@
+.window-registration-user{
+    padding: 25px;
+}
+
+.title-window-registration-user{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.title-window-registration-user>h2{
+    font-weight: 600;
+}
+
+.inputs-form-user-reg>input{
+    display: block;
+    
+    margin-top: 27px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 8px;
+    padding: 19px;
+    outline: none;
+    
+}
+
+.inputs-form-user-reg>input::placeholder {
+    opacity: .3;
+}
+
+.btn-finish-registration{
+    border: 1px solid rgb(33, 31, 123);
+    margin-top: 37px;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(33, 31, 123);
+    transition: 0.2s;
+    
+}
+.btn-finish-registration:hover{
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}
+
+@media (max-width: 380px){
+    .inputs-form-user-reg>input, 
+    .btn-finish-registration{
+        width: 90%;
+        height: 40px;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,59 @@
+{% extends 'base_app/registration_template.html'%}
+{% load static %}
+
+{% block title %}
+Подтверждение электронной почты
+{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'base_app/css/submit-email.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container-submit-email">
+    <div class="submit-email-wrapper">
+        <div class="title-submit-email">
+            <h3>Подтверждение 
+                почты</h3>
+        </div>
+        <div class="text-under-title">
+            <p>Введите код пришедший на почту</p>
+        </div>
+
+        <div class="form-input-code">
+            <form method="post">
+                <div class="pin-code">
+
+                    <input class="first-input" type="number" maxlength="1" autofocus>
+                    <input class="base-input" type="number" maxlength="1">
+                    <input class="base-input" type="number" maxlength="1">
+                    <input class="base-input" type="number" maxlength="1">
+                </div>
+                
+                <a href="#" class="send-again">
+                    <div class="text-under-form">
+                        <p>Отправить код ещё раз</p>
+                    </div>
+                </a>
+                
+        
+                <div class="button-submit-form">
+                    <button class="btn-finish-registration" type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+
+        
+    </div>
+</div>
+{% endblock %}
+
+
+
+
+{% block script %}  
+<script src="{% static 'base_app/js/submit-email.js' %}"></script>
+
+
+{% endblock %}

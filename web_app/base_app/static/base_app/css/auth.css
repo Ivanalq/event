@@ -1,0 +1,127 @@
+.window-authtorization{
+    padding: 25px;
+}
+
+.title-window-authtorization{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.title-window-authtorization>h2{
+    font-weight: 600;
+}
+
+.inputs-form-auth>input{
+    display: block;
+    
+    margin-top: 27px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 8px;
+    padding: 19px;
+    outline: none;
+    
+}
+
+.inputs-form-auth>input::placeholder {
+    opacity: .3;
+}
+
+.btn-finish-authtorization{
+    border: 1px solid rgb(33, 31, 123);
+    margin-top: 37px;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(33, 31, 123);
+    transition: 0.2s;
+    
+}
+.btn-finish-authtorization:hover{
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}
+
+.icon-auth-method{
+    width: 45px;
+}
+
+.container-methods-auth{
+    margin-top: 20px;
+    display: inline-flex;
+    
+}
+.title-dop-form-auth-user{
+    display: block;
+
+  
+}
+
+
+.dop-form-auth-user{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.title-dop-form-auth-user{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.sn-method-auth{
+    border: 1px solid rgb(104, 104, 104);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.left-method{
+    margin-left: 14px;
+}
+.right-method{
+    margin-right: 14px;
+}
+.create-account-container{
+    margin-top: 10px;
+}
+.create-account-btn{
+    display: inline-block; 
+    background: #ffffff; 
+    border: 1px solid rgb(33, 31, 123);
+    color: rgb(33, 31, 123); 
+    padding: 8px 15px; 
+    text-decoration: none; 
+    border-radius: 8px; 
+    width: 300px;
+    transition: 0.3s;
+    
+}
+
+.create-account-btn:hover{
+    background-color: rgb(33, 31, 123);
+    color: white;
+    transition: 0.3s;
+}
+.inner-button-registration{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 380px){
+    .inputs-form-auth>input, 
+    .btn-finish-authtorization,
+    .create-account-btn{
+        width: 90%;
+        height: 40px;
+        padding: 8px;
+    }
+
+    .icon-auth-method {
+        width: 27px;
+    }
+}
