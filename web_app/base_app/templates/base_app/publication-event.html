@@ -1,0 +1,142 @@
+{% extends 'base_app/base-layout.html'%}
+{% load static %}
+
+{% block title %}
+Создать мероприятие
+{% endblock %}
+
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'base_app/css/publication-event.css' %}" />
+{% endblock %}
+
+
+{% block content %}
+<div class="head-section-navigation">
+    <div class="wrapper-head-section-navigation">
+        <div class="container-create-event">
+            <div class="container text-center">
+                <form action="" method="post">
+
+                
+                    <div class="row">
+                    
+                        <div class="col">
+                            <div class="pools-input-information">
+                                <div class="baground-container-pool">
+                                    <div class="inner-container">
+
+                                        <div class="title-pool-input">
+                                            <p>Введите название мероприятия</p>
+                                        </div>
+                                        <div class="field-input-base">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="baground-container-pool">
+                                    <div class="inner-container">
+
+                                        <div class="title-pool-input">
+                                            <p>Введите описание мероприятия</p>
+                                        </div>
+                                        <div class="field-input-base">
+                                            <textarea name="aboba" id="" cols="47" rows="9" maxlength="400"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="baground-container-pool">
+                                    <div class="inner-container">
+
+                                        <div class="title-pool-input">
+                                            <p>Введите краткое описание мероприятия</p>
+                                        </div>
+                                        <div class="field-input-base">
+                                            <textarea name="aboba" id="" cols="47" rows="5" maxlength="300"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="pools-input-information">
+                                <div class="baground-container-pool">
+                                    <div class="inner-container">
+
+                                        <div class="title-pool-input">
+                                            <p>Время начала мероприятия </p>
+                                        </div>
+                                        <div class="field-input-base">
+                                            <input type="time" maxlength="20">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="baground-container-pool">
+                                    <div class="inner-container">
+
+                                        <div class="title-pool-input">
+                                            <p>Время, которое займет мероприятие в минутах</p>
+                                        </div>
+                                        <div class="field-input-base">
+                                            <input type="number" maxlength="20">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="baground-container-pool">
+                                    <div class="inner-container">
+
+                                        <div class="title-pool-input">
+                                            <p>Адрес проведения мероприятия</p>
+                                        </div>
+                                        <div class="field-input-base">
+                                            <input type="text" maxlength="90">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="baground-container-pool">
+                                    <div class="inner-container">
+
+                                        <div class="title-pool-input">
+                                            <p>Критерии</p>
+                                        </div>
+                                        <div class="field-input-base">
+                                            <textarea name="aboba" id="" cols="47" rows="5" maxlength="300"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="baground-container-pool">
+                                    <div class="inner-container">
+
+                                        <div class="title-pool-input">
+                                            <p>Выберите фото для обложки</p>
+                                        </div>
+                                        <div class="field-input-base">
+                                            
+                                            <label class="input-file">
+                                                <input type="file" name="file">		
+                                                <span>Выберите  фото для обложки</span>
+                                          </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                  
+                    </div>
+                    <div class="button-create">
+                        <button class="btn-send-event" type="submit">Отправить</button>
+                        
+                    </div>
+                </form>
+              </div>
+            
+        </div>
+       
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}  
+<script src="{% static 'base_app/js/publication-event.js' %}"></script>
+{% endblock %}

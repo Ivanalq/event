@@ -1,0 +1,576 @@
+{% extends 'base_app/base-layout.html'%}
+{% load static %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+
+{% block style %}
+
+{% endblock %}
+
+
+{% block content %}
+<section>
+    <div class="background-container">
+        <div class="container-text-under-navbar-wrapper">
+          <div class="container-text-under-navbar">
+            <div class="row row-under-nav">
+              <div class="col-8 base-text-column">
+                <div class="title-base-text-container">
+                  <h2 class="title-base-text-header">Кто мы?</h2>
+                </div>
+                <div class="p-text-base-text">
+                  <p class="base-text-p-header">
+                    Сайт "Мероприятия СПб" - это удобный календарь событий, проходящих в Санкт-Петербурге. Здесь вы найдете информацию о концертах, выставках, спортивных мероприятиях, фестивалях и других интересных событиях, которые проходят в городе. На сайте можно выбрать нужную дату и узнать, что происходит в этот день, а также подписаться на рассылку и получать уведомления о новых мероприятиях. Благодаря сайту "Мероприятия СПб" вы никогда не пропустите важное событие в своем городе!
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 image-site-logo">
+                <div class="image-section-basetext-header">
+                  <img class="logotipe-site-under-header" src="media/img/logo.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <div class="head-section-navigation">
+    <div class="wrapper-head-section-navigation">
+      <div class="title-head-sc-navigation">
+        <h4>Мероприятия</h4>
+      </div>
+
+      <div class="section-navigaiton-panel-container">
+        <div class="button-sort-quick">
+          
+          <div class="dropdown-button-custom">
+            <div class="start-select-button" id="start-select-button">
+              <span id="text">По популярности</span>
+              <ion-icon class="arrow-down" name="chevron-down-outline"></ion-icon>
+            </div>
+            
+            <ul class="mods-sort-inems">
+               <li class="option" style="--i:4;"><span class="option-text">По популярности</span></li>
+               <li class="option" style="--i:3;"><span class="option-text">По дате</span></li>
+               <li class="option" style="--i:2;"><span class="option-text">По времени</span></li>
+               <li class="option" style="--i:1;"><span class="option-text">Сначала новые</span></li>
+            </ul>
+          </div>
+
+          
+          
+        </div>
+        <nav class="filter-button-container">
+          
+          <button class="button-select-filters-base" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent"  >
+            <div class="button-filters ">
+              <span class="menu-filters-btn">Фильтры</span>
+              <ion-icon class="icon-filers" name="file-tray-full-outline"></ion-icon>
+            </div>
+          </button>
+          
+        </nav>
+        <div class="collapse mob-navigation-collapse" id="navbarToggleExternalContent"  data-bs-theme="white">
+          <div class="bg-white mods-search-container-wrepper">
+            <div class="mods-seach-containers ">
+              <div class="container text-left">
+                <div class="row">
+                  <div class="col">
+                    <div class="one-block-seach">
+                      <ul>
+                        <p class="title-mods-menu">По дате публикации</p>
+                        <hr>
+  
+                        <li class="one-seach-point"><button class="one-search-mod-btn">Сначала новые</button></li>
+                        <li class="one-seach-point"><button class="one-search-mod-btn">Сначала старые</button></li>
+                        <li class="one-seach-point"><button class="one-search-mod-btn">За этот месяц</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="one-block-seach">
+                      <ul>
+                        <p class="title-mods-menu">По дате мероприятия</p>
+                        <hr>
+                        <li class="one-seach-point"><button class="one-search-mod-btn">Сегодня</button></li>
+                        <li class="one-seach-point"><button class="one-search-mod-btn">Завтра</button></li>
+                        <li class="one-seach-point"><button class="one-search-mod-btn">На этой неделе</button></li>
+                        <li class="one-seach-point"><button class="one-search-mod-btn">В этом месяце</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="one-block-seach">
+                      <ul>
+                        <p class="title-mods-menu">Длительность</p>
+                        <hr>
+                        <li class="one-seach-point"><button class="one-search-mod-btn">До часу</button></li>
+                        <li class="one-seach-point"><button class="one-search-mod-btn">От часу до двух</button></li>
+                        <li class="one-seach-point"><button class="one-search-mod-btn">Более двух часов</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="one-block-seach">
+                      <ul>
+                        <p class="title-mods-menu">Возраст</p>
+                        <hr>
+                        <li class="one-seach-point"><button class="one-search-mod-btn">От 12 лет</button></li>
+                        <li class="one-seach-point"><button class="one-search-mod-btn">От 16 лет</button></li>
+                        <li class="one-seach-point"><button class="one-search-mod-btn">От 18 лет</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="one-block-seach">
+                      <ul>
+                        <p class="title-mods-menu">Метро</p>
+                        <hr>
+                        <li class="one-seach-point">
+                          <div class="search-nav-item">
+                            <div class="container-2">
+                              <input type="text" maxlength= "30" placeholder="Найти" class="searchbar1">
+                              <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="search icon" class="button1">
+                            </div>
+          
+                          </div>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              
+              
+              
+            
+              
+              
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+  <div class="events-cards">
+    <div class="events-cards-werapper-general">
+      <div class="container-fluid container-fluid-custom">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+          <div class="col event-card-col-custom">
+            <div class="event-card-wrapper">
+              <div class="scelet-event-card">
+                <div class="head-event-card ">
+                  <div class="title-event-card">
+                    <h3>Литературная Мафия</h3>
+                  </div>
+                </div>
+                <div class="upper-telo-cardevent">
+                  <div class="image1-cardevent">
+                    <img class="image1-cardevent-img" src="media/img/mafia1.webp" alt="">
+                  </div>
+                  <div class="text1-cardevent">
+                    <p class="text1-cardevent-p">Игра в мафию, но вместо обычных ролей, будут литературные герои.
+                      Перед началом игры расскажут правила.</p>
+                  </div>
+                </div>
+                <div class="downer-telo0container">
+                  
+                  <div class="text-nearby-image-down">
+                    <div class="text-carevent-base-item">
+                      <p class="text-downer-nearby-img-down-p">
+                        Ограничения: Возраст 10+ <br>
+                        Время: 16:00 <br>
+                        Метро: Пионерская <br>
+                        Адрес:  Богатырский проспект, 8
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="button-more-container">
+                  <div class="button-more-wrapper">
+                    <button class="more-btn-eventcard">Подробнее</button>
+                  </div>
+                </div>
+
+                
+                
+              </div>
+            </div>
+            
+          </div>  
+          <div class="col event-card-col-custom">
+            <div class="event-card-wrapper">
+              <div class="scelet-event-card">
+                <div class="head-event-card ">
+                  <div class="title-event-card">
+                    <h3>Литературная Мафия</h3>
+                  </div>
+                </div>
+                <div class="upper-telo-cardevent">
+                  <div class="image1-cardevent">
+                    <img class="image1-cardevent-img" src="media/img/mafia1.webp" alt="">
+                  </div>
+                  <div class="text1-cardevent">
+                    <p class="text1-cardevent-p">Игра в мафию, но вместо обычных ролей, будут литературные герои.
+                      Перед началом игры расскажут правила.</p>
+                  </div>
+                </div>
+                <div class="downer-telo0container">
+                  
+                  <div class="text-nearby-image-down">
+                    <div class="text-carevent-base-item">
+                      <p class="text-downer-nearby-img-down-p">
+                        Ограничения: Возраст 10+ <br>
+                        Время: 16:00 <br>
+                        Метро: Пионерская <br>
+                        Адрес:  Богатырский проспект, 8
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="button-more-container">
+                  <div class="button-more-wrapper">
+                    <button class="more-btn-eventcard">Подробнее</button>
+                  </div>
+                </div>
+
+                
+                
+              </div>
+            </div>
+            
+          </div>  
+          <div class="col event-card-col-custom">
+            <div class="event-card-wrapper">
+              <div class="scelet-event-card">
+                <div class="head-event-card ">
+                  <div class="title-event-card">
+                    <h3>Литературная Мафия</h3>
+                  </div>
+                </div>
+                <div class="upper-telo-cardevent">
+                  <div class="image1-cardevent">
+                    <img class="image1-cardevent-img" src="media/img/mafia1.webp" alt="">
+                  </div>
+                  <div class="text1-cardevent">
+                    <p class="text1-cardevent-p">Игра в мафию, но вместо обычных ролей, будут литературные герои.
+                      Перед началом игры расскажут правила.</p>
+                  </div>
+                </div>
+                <div class="downer-telo0container">
+                  
+                  <div class="text-nearby-image-down">
+                    <div class="text-carevent-base-item">
+                      <p class="text-downer-nearby-img-down-p">
+                        Ограничения: Возраст 10+ <br>
+                        Время: 16:00 <br>
+                        Метро: Пионерская <br>
+                        Адрес:  Богатырский проспект, 8
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="button-more-container">
+                  <div class="button-more-wrapper">
+                    <button class="more-btn-eventcard">Подробнее</button>
+                  </div>
+                </div>
+
+                
+                
+              </div>
+            </div>
+            
+          </div>  
+          
+          <div class="col event-card-col-custom">
+            <div class="event-card-wrapper">
+              <div class="scelet-event-card">
+                <div class="head-event-card ">
+                  <div class="title-event-card">
+                    <h3>Литературная Мафия</h3>
+                  </div>
+                </div>
+                <div class="upper-telo-cardevent">
+                  <div class="image1-cardevent">
+                    <img class="image1-cardevent-img" src="media/img/mafia1.webp" alt="">
+                  </div>
+                  <div class="text1-cardevent">
+                    <p class="text1-cardevent-p">Игра в мафию, но вместо обычных ролей, будут литературные герои.
+                      Перед началом игры расскажут правила.</p>
+                  </div>
+                </div>
+                <div class="downer-telo0container">
+                  
+                  <div class="text-nearby-image-down">
+                    <div class="text-carevent-base-item">
+                      <p class="text-downer-nearby-img-down-p">
+                        Ограничения: Возраст 10+ <br>
+                        Время: 16:00 <br>
+                        Метро: Пионерская <br>
+                        Адрес:  Богатырский проспект, 8
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="button-more-container">
+                  <div class="button-more-wrapper">
+                    <button class="more-btn-eventcard">Подробнее</button>
+                  </div>
+                </div>
+
+                
+                
+              </div>
+            </div>
+            
+          </div>  
+          
+          <div class="col event-card-col-custom">
+            <div class="event-card-wrapper">
+              <div class="scelet-event-card">
+                <div class="head-event-card ">
+                  <div class="title-event-card">
+                    <h3>Литературная Мафия</h3>
+                  </div>
+                </div>
+                <div class="upper-telo-cardevent">
+                  <div class="image1-cardevent">
+                    <img class="image1-cardevent-img" src="media/img/mafia1.webp" alt="">
+                  </div>
+                  <div class="text1-cardevent">
+                    <p class="text1-cardevent-p">Игра в мафию, но вместо обычных ролей, будут литературные герои.
+                      Перед началом игры расскажут правила.</p>
+                  </div>
+                </div>
+                <div class="downer-telo0container">
+                  
+                  <div class="text-nearby-image-down">
+                    <div class="text-carevent-base-item">
+                      <p class="text-downer-nearby-img-down-p">
+                        Ограничения: Возраст 10+ <br>
+                        Время: 16:00 <br>
+                        Метро: Пионерская <br>
+                        Адрес:  Богатырский проспект, 8
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="button-more-container">
+                  <div class="button-more-wrapper">
+                    <button class="more-btn-eventcard">Подробнее</button>
+                  </div>
+                </div>
+
+                
+                
+              </div>
+            </div>
+            
+          </div>  
+          
+          <div class="col event-card-col-custom">
+            <div class="event-card-wrapper">
+              <div class="scelet-event-card">
+                <div class="head-event-card ">
+                  <div class="title-event-card">
+                    <h3>Литературная Мафия</h3>
+                  </div>
+                </div>
+                <div class="upper-telo-cardevent">
+                  <div class="image1-cardevent">
+                    <img class="image1-cardevent-img" src="media/img/mafia1.webp" alt="">
+                  </div>
+                  <div class="text1-cardevent">
+                    <p class="text1-cardevent-p">Игра в мафию, но вместо обычных ролей, будут литературные герои.
+                      Перед началом игры расскажут правила.</p>
+                  </div>
+                </div>
+                <div class="downer-telo0container">
+                  
+                  <div class="text-nearby-image-down">
+                    <div class="text-carevent-base-item">
+                      <p class="text-downer-nearby-img-down-p">
+                        Ограничения: Возраст 10+ <br>
+                        Время: 16:00 <br>
+                        Метро: Пионерская <br>
+                        Адрес:  Богатырский проспект, 8
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="button-more-container">
+                  <div class="button-more-wrapper">
+                    <button class="more-btn-eventcard">Подробнее</button>
+                  </div>
+                </div>
+
+                
+                
+              </div>
+            </div>
+            
+          </div>  
+          
+          <div class="col event-card-col-custom">
+            <div class="event-card-wrapper">
+              <div class="scelet-event-card">
+                <div class="head-event-card ">
+                  <div class="title-event-card">
+                    <h3>Литературная Мафия</h3>
+                  </div>
+                </div>
+                <div class="upper-telo-cardevent">
+                  <div class="image1-cardevent">
+                    <img class="image1-cardevent-img" src="media/img/mafia1.webp" alt="">
+                  </div>
+                  <div class="text1-cardevent">
+                    <p class="text1-cardevent-p">Игра в мафию, но вместо обычных ролей, будут литературные герои.
+                      Перед началом игры расскажут правила.</p>
+                  </div>
+                </div>
+                <div class="downer-telo0container">
+                  
+                  <div class="text-nearby-image-down">
+                    <div class="text-carevent-base-item">
+                      <p class="text-downer-nearby-img-down-p">
+                        Ограничения: Возраст 10+ <br>
+                        Время: 16:00 <br>
+                        Метро: Пионерская <br>
+                        Адрес:  Богатырский проспект, 8
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="button-more-container">
+                  <div class="button-more-wrapper">
+                    <button class="more-btn-eventcard">Подробнее</button>
+                  </div>
+                </div>
+
+                
+                
+              </div>
+            </div>
+            
+          </div>  
+          
+          <div class="col event-card-col-custom">
+            <div class="event-card-wrapper">
+              <div class="scelet-event-card">
+                <div class="head-event-card ">
+                  <div class="title-event-card">
+                    <h3>Литературная Мафия</h3>
+                  </div>
+                </div>
+                <div class="upper-telo-cardevent">
+                  <div class="image1-cardevent">
+                    <img class="image1-cardevent-img" src="media/img/mafia1.webp" alt="">
+                  </div>
+                  <div class="text1-cardevent">
+                    <p class="text1-cardevent-p">Игра в мафию, но вместо обычных ролей, будут литературные герои.
+                      Перед началом игры расскажут правила.</p>
+                  </div>
+                </div>
+                <div class="downer-telo0container">
+                  
+                  <div class="text-nearby-image-down">
+                    <div class="text-carevent-base-item">
+                      <p class="text-downer-nearby-img-down-p">
+                        Ограничения: Возраст 10+ <br>
+                        Время: 16:00 <br>
+                        Метро: Пионерская <br>
+                        Адрес:  Богатырский проспект, 8
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="button-more-container">
+                  <div class="button-more-wrapper">
+                    <button class="more-btn-eventcard">Подробнее</button>
+                  </div>
+                </div>
+
+                
+                
+              </div>
+            </div>
+            
+          </div>  
+          
+          <div class="col event-card-col-custom">
+            <div class="event-card-wrapper">
+              <div class="scelet-event-card">
+                <div class="head-event-card ">
+                  <div class="title-event-card">
+                    <h3>Литературная Мафия</h3>
+                  </div>
+                </div>
+                <div class="upper-telo-cardevent">
+                  <div class="image1-cardevent">
+                    <img class="image1-cardevent-img" src="media/img/mafia1.webp" alt="">
+                  </div>
+                  <div class="text1-cardevent">
+                    <p class="text1-cardevent-p">Игра в мафию, но вместо обычных ролей, будут литературные герои.
+                      Перед началом игры расскажут правила.</p>
+                  </div>
+                </div>
+                <div class="downer-telo0container">
+                  
+                  <div class="text-nearby-image-down">
+                    <div class="text-carevent-base-item">
+                      <p class="text-downer-nearby-img-down-p">
+                        Ограничения: Возраст 10+ <br>
+                        Время: 16:00 <br>
+                        Метро: Пионерская <br>
+                        Адрес:  Богатырский проспект, 8
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="button-more-container">
+                  <div class="button-more-wrapper">
+                    <button class="more-btn-eventcard">Подробнее</button>
+                  </div>
+                </div>
+
+                
+                
+              </div>
+            </div>
+            
+          </div>  
+          
+          
+          
+
+        </div> 
+    </div>
+    </div>
+  </div>
+
+
+</section>
+{% endblock %}
+
+{% block script %}  
+
+{% endblock %}

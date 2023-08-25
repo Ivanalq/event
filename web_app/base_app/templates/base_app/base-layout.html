@@ -1,0 +1,181 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'base_app/css/base.css' %}" />
+    <link rel="stylesheet" href="{% static 'base_app/css/media.css' %}" />
+    <link rel="stylesheet" href="{% static 'base_app/css/section.css' %}" />
+    {% block style %}
+
+    {% endblock %}
+</head>
+<body>
+    <header>
+      <nav>
+          <div class="container-navbar">
+            <div class="inner-container-navbar">
+                <div class="row">
+                  <div class="col">
+                    <div class="nav-item site-name-base">
+                      <a href="#" class="site-name"><h3>Мероприятия СПБ</h3></a>
+                    </div>
+                  </div>
+                  <div class="col search-item-nav">
+                    <div class="nav-item ">
+                      <div class="search-nav-item">
+                        <div class="container-1">
+                          <input type="text" maxlength= "30" placeholder="Найти" class="searchbar">
+                          <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="search icon" class="button">
+                        </div>
+      
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col buttonn-items-nav" id="buttons">
+                    <div class="nav-item buttons-nav-menu">
+                      <div class="nav-buttons">
+                        <button class="button-menu button-login btn-login-mob">Войти</button>
+                        <button class="button-menu base-nav-button btn-registration-mob"  data-bs-toggle="modal" data-bs-target="#exampleModal">Регистрация</button>
+                        <button class="button-menu base-nav-button about-us">О нас</button>
+                        <button class="button-menu base-nav-button btn-registration-nav" data-bs-toggle="modal" data-bs-target="#exampleModal">Регистрация</button>
+                        <button class="button-menu button-login">Войти</button>
+                        <button class="button-menu base-nav-button mobile-item-nav-button mobile-item-nav-button-events">Мои мероприятия</button>
+                        <button class="button-menu base-nav-button mobile-item-nav-button">Посещённые мероприятия</button>
+                        <button class="button-menu base-nav-button mobile-item-nav-button mobile-item-nav-button-exit">Выйти</button>
+                        
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Зарегистрироваться как</h1>
+                                
+                              </div>
+                              <div class="modal-body">
+                                <h6>Организация может публиковать мероприятия а пользователь может только в них участвовать, в свою очередь организация должна будет пройти верификацию, и только после этого она сможет публиковать мероприятия</h6>
+                                <button class="modal-buttun">Регистрация как пользователь</button>
+                                <button class="modal-buttun">Регистрация как организация</button>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+      
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="search-item-nav nav-button-search-menu">
+                          <div class="nav-item ">
+                            <div class="search-nav-item">
+                              <div class="container-1">
+                                <input type="text" maxlength= "30" placeholder="Найти" class="searchbar">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="search icon" class="button">
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="button-exit-in-base-menu" id="exit-btn">
+                      <button class="btn-exit-nav">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                          <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col- burger-button" id="nav-btn">
+                    <div class="burger-button-container">
+                      <button class="burger-nav-button">
+                        <div class="inbutton-container">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="44" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                          </svg>
+                        </div>
+                         </button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div> 
+      </nav>
+    </header>
+
+
+
+
+
+
+
+
+{% block content %}
+
+{% endblock %}
+    <footer>
+      <div class="all-foooter-container">
+        <div class="wrapper-footer-container">
+          <div class="footer-container-inner">
+            <div class="up-row-container">
+              <div class="social-networks-container">
+                <div class="text-base-social-networks">
+                  Наши социальные сети:
+                </div>
+
+                <div class="social-network-container">
+                  <div class="logothipe">
+                    <ion-icon class="logovk" name="logo-vk"></ion-icon>
+                  </div>
+                  <div class="name-social-network">
+                    <p>Вконтакте</p>
+                  </div>
+                </div>
+                <div class="social-network-container">
+                  <div class="logothipe">
+                    <ion-icon class="logoface" name="logo-facebook"></ion-icon>
+                  </div>
+                  <div class="name-social-network">
+                    <p>Facebook</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dop-buttons-nav">
+                <div class="button-footer">
+                  <button class="footer-button">Техническая поддержка</button>
+                </div>
+
+                <div class="button-footer">
+                  <button class="footer-button">Санкт-Петербург</button>
+                </div>
+              </div>
+            </div>
+            <div class="down-row-container">
+              Copyright © 2023, Мероприятия СПБ! All Rights Reserved.
+            </div>
+          </div>
+
+        </div>
+      </div>    
+    </div>
+    </footer> 
+
+  {% block script %}  
+
+  {% endblock %}
+  <script src=»//code.jquery.com/jquery-3.5.1.slim.min.js» integrity=»sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj» crossorigin=»anonymous» async ></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="{% static 'base_app/js/main.js' %}"></script>
+  <script src="{% static 'base_app/js/dropdownbutton.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
