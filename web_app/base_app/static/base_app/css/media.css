@@ -1,6 +1,7 @@
 @media (max-width: 1200px){
     .search-item-nav,
-    .buttonn-items-nav{
+    .buttonn-items-nav, 
+    .modal-backdrop{
         display: none;
     }
     .events-cards-werapper-general{

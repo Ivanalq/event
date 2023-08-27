@@ -608,11 +608,9 @@ body{
     justify-content: center;
 }
 
-.modal-dialog{
-    z-index: 3;
-}
+
 
 .modal-backdrop{
-    display: none;
+    display: flex;
 }
 

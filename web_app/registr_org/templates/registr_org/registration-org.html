@@ -1,0 +1,49 @@
+{% extends 'base_app/registration_template.html'%}
+{% load static %}
+
+{% block title %}
+Регистрация Организации
+{% endblock %}
+
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'registr_org/css/registration-org.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="window-registration-user">
+    <div class="title-window-registration-user">
+        <h2>Регистрация</h2>
+    </div>
+    <div class="form-registration-user">
+        <form action="POST" class="form-registration-user-form">
+            <div class="inputs-form-user-reg">
+                <input type="text" required placeholder="Название организации" minlength="5" class="Input-login">
+                <input type="text" required placeholder="Логин" minlength="8" class="Input-login">
+                <input type="text" required id="phone-number-input" minlength="12" placeholder="Номер телефона"/>
+                <input type="email" placeholder="Email" class="Input-login">
+                <input type="password" placeholder="Пароль" class="Input-login" minlength="8">
+            </div>
+            <div class="info-text-container">
+                <div class="title-info-text">
+                    <h5>Важно!</h5>
+                </div>
+                <div class="base-text-info">
+                    <p>Для того, что бы организация могла публиковать мероприятия, она должна пройти аутентификацию, то есть, после регистрации вы должны перейти в личный кабинет и прикрепить к профилю документы, подтверждающие действительность данной организации, иначе вы не сможете публиковать мероприятия.</p>
+                </div>
+            </div>
+            <div class="button-finish-registration">
+                <button class="btn-finish-registration" type="submit">Зарегистрироваться</button>
+            </div>
+        </form>
+    </div>
+    
+</div>
+
+{% endblock %}
+
+
+{% block script %}  
+<script src="{% static 'registr_org/js/mask-number.js' %}"></script>
+<script src="https://unpkg.com/imask"></script>
+{% endblock %}

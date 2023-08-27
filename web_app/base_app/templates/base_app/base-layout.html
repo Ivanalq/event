@@ -42,11 +42,11 @@
                   <div class="col buttonn-items-nav" id="buttons">
                     <div class="nav-item buttons-nav-menu">
                       <div class="nav-buttons">
-                        <button class="button-menu button-login btn-login-mob">Войти</button>
+                        <a href="/auth"><button class="button-menu button-login btn-login-mob">Войти</button></a>
                         <button class="button-menu base-nav-button btn-registration-mob"  data-bs-toggle="modal" data-bs-target="#exampleModal">Регистрация</button>
                         <button class="button-menu base-nav-button about-us">О нас</button>
                         <button class="button-menu base-nav-button btn-registration-nav" data-bs-toggle="modal" data-bs-target="#exampleModal">Регистрация</button>
-                        <button class="button-menu button-login">Войти</button>
+                        <a href="/auth" class="button-menu button-login">Войти</a>
                         <button class="button-menu base-nav-button mobile-item-nav-button mobile-item-nav-button-events">Мои мероприятия</button>
                         <button class="button-menu base-nav-button mobile-item-nav-button">Посещённые мероприятия</button>
                         <button class="button-menu base-nav-button mobile-item-nav-button mobile-item-nav-button-exit">Выйти</button>
@@ -60,8 +60,8 @@
                               </div>
                               <div class="modal-body">
                                 <h6>Организация может публиковать мероприятия а пользователь может только в них участвовать, в свою очередь организация должна будет пройти верификацию, и только после этого она сможет публиковать мероприятия</h6>
-                                <button class="modal-buttun">Регистрация как пользователь</button>
-                                <button class="modal-buttun">Регистрация как организация</button>
+                                <a href="/register_user" class="modal-buttun">Регистрация как пользователь</a>
+                                <a href="/register_org" class="modal-buttun">Регистрация как организация</a>
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
@@ -171,7 +171,6 @@
   {% block script %}  
 
   {% endblock %}
-  <script src=»//code.jquery.com/jquery-3.5.1.slim.min.js» integrity=»sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj» crossorigin=»anonymous» async ></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="{% static 'base_app/js/main.js' %}"></script>

@@ -1,0 +1,43 @@
+{% extends 'base_app/registration_template.html'%}
+{% load static %}
+
+{% block title %}
+Регистрация пользователя
+{% endblock %}
+
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'registr_user/css/registration-user.css' %}">
+{% endblock %}
+
+
+
+{% block content %}
+<div class="window-registration-user">
+    <div class="title-window-registration-user">
+        <h2>Регистрация</h2>
+    </div>
+    <div class="form-registration-user">
+        <form action="POST" class="form-registration-user-form">
+            <div class="inputs-form-user-reg">
+
+                <input type="text" required placeholder="Логин" minlength="8" class="Input-login">
+                <input type="text" required id="phone-number-input" minlength="12" placeholder="Номер телефона"/>
+                <input type="email" placeholder="Email" class="Input-login">
+                <input type="password" placeholder="Пароль" class="Input-login" minlength="8">
+            </div>
+            <div class="button-finish-registration">
+                <button class="btn-finish-registration" type="submit">Зарегистрироваться</button>
+            </div>
+        </form>
+
+        
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}  
+<script src="{% static 'registr_user/js/mask-number.js' %}"></script>
+<script src="https://unpkg.com/imask"></script>
+
+{% endblock %}
