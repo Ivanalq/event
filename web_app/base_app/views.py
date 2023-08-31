@@ -1,11 +1,11 @@
 from django.shortcuts import render
 from django.shortcuts import HttpResponse
-from django.core.mail import send_mail
+
 
 
 def index(request):
     
-    
+    print(3)
     
     return render(request, 'base_app/home-page.html')
 
